@@ -16,14 +16,14 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/car_not_car.png
 [image2]: ./output_images/HOG_example.png
 [imageHogPara]: ./output_images/HOG_Para.png
-[image_s1]: ./output_images/sacle_1.png
-[image_s2_5]: ./output_images/sacle_2_5.png
+[image_s1]: ./output_images/scale_1.png
+[image_s2_5]: ./output_images/scale_2_5.png
 [image3]: ./output_images/sliding_window.png
 [image4]: ./output_images/heatmap.png
 [image5]: ./examples/bboxes_and_heat.png
 [image6]: ./examples/labels_map.png
 [image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
+[video1]: ./project_video_test.mp4
 
 
 ### Histogram of Oriented Gradients (HOG)
@@ -87,7 +87,7 @@ Heatmap
 ### Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./project_video_test.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
@@ -103,6 +103,6 @@ heat_history = reduce(lambda h, acc: h + acc, hist.rect)/90
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 * Current preformance is slow. To increase the preformance, we can search less windows in X-axis for different part of the image
-* We are using car at the moment, there will be other vehicle such as bigger trucks and bike. Which it cannot detect
+* We are using car at the moment, there will be other vehicle such as bigger trucks and bikes, which it cannot detect.
 
 
