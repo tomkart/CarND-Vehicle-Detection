@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image5]: ./examples/bboxes_and_heat.png
 [image6]: ./examples/labels_map.png
 [image7]: ./examples/output_bboxes.png
-[video1]: ./project_video_test.mp4
+[video1]: ./project_video_out.mp4
 
 
 ### Histogram of Oriented Gradients (HOG)
